@@ -16,8 +16,7 @@ class Solution:
         ans, queue = [], [root]
 
         while queue:
-            currLevel = []
-            nextQueue = []
+            currLevel, nextQueue = [], []
             for node in queue:
                 currLevel.append(node.val)
                 if node.left:
